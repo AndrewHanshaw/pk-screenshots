@@ -1,14 +1,6 @@
-//
-//  pkScreenshotsUITestsLaunchTests.swift
-//  pkScreenshotsUITests
-//
-//  Created by Andrew Hanshaw on 1/26/25.
-//
-
 import XCTest
 
 final class pkScreenshotsUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
