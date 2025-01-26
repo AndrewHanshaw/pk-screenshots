@@ -1,10 +1,3 @@
-//
-//  pkScreenshotsApp.swift
-//  pkScreenshots
-//
-//  Created by Andrew Hanshaw on 1/26/25.
-//
-
 import SwiftUI
 
 @main

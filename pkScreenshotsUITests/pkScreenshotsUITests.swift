@@ -1,14 +1,6 @@
-//
-//  pkScreenshotsUITests.swift
-//  pkScreenshotsUITests
-//
-//  Created by Andrew Hanshaw on 1/26/25.
-//
-
 import XCTest
 
 final class pkScreenshotsUITests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
