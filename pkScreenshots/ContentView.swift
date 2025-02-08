@@ -3,22 +3,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Button("Save screenshot 1") {
-            saveViewAsPNG(view: ScreenshotView(headerText: "Manage your passes", subtitleText: "To edit later", imageName: "Screenshot1").frame(width: 1320, height: 2868), filename: "Screenshot1")
+            saveViewAsPNG(view: ScreenshotView(headerText: "Manage your passes", subtitleText: "To edit later", imageName: "Screenshot1"), filename: "Screenshot1")
         }
         .padding()
 
         Button("Save screenshot 2") {
-            saveViewAsPNG(view: ScreenshotView(headerText: "Customize Passes", subtitleText: "To create unique cards", imageName: "Screenshot2").frame(width: 1320, height: 2868), filename: "Screenshot2")
+            saveViewAsPNG(view: ScreenshotView(headerText: "Customize Passes", subtitleText: "To create unique cards", imageName: "Screenshot2"), filename: "Screenshot2")
         }
         .padding()
 
         Button("Save screenshot 3") {
-            saveViewAsPNG(view: ScreenshotView(headerText: "Scan existing cards", subtitleText: "And save them digitally", imageName: "Screenshot3").frame(width: 1320, height: 2868), filename: "Screenshot3")
+            saveViewAsPNG(view: ScreenshotView(headerText: "Scan existing cards", subtitleText: "And save them digitally", imageName: "Screenshot3"), filename: "Screenshot3")
         }
         .padding()
 
         Button("Save GitHub Social Preview") {
-            saveViewAsPNG(view: GithubSocialPreview().frame(width: 1280, height: 640), filename: "GitHubSocialPreview")
+            saveViewAsPNG(view: GithubSocialPreview(), filename: "GitHubSocialPreview")
         }
         .padding()
     }

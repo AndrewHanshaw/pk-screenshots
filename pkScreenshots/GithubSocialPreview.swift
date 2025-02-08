@@ -1,5 +1,9 @@
 import SwiftUI
 
+private let FRAME_WIDTH = 1280
+private let FRAME_HEIGHT = 640
+private let PREVIEW_SCALE = 0.25
+
 struct GithubSocialPreview: View {
     let backgroundcolor1: Color = .init(hex: 0x173C1C)
     let backgroundcolor2: Color = .init(hex: 0x102A13)
@@ -27,10 +31,12 @@ struct GithubSocialPreview: View {
             }
             .padding()
         }
-        .aspectRatio(2, contentMode: .fit)
+        .frame(width: CGFloat(FRAME_WIDTH), height: CGFloat(FRAME_HEIGHT))
     }
 }
 
 #Preview {
     GithubSocialPreview()
+        .scaleEffect(PREVIEW_SCALE)
+        .frame(width: Double(FRAME_WIDTH) * PREVIEW_SCALE, height: Double(FRAME_HEIGHT) * PREVIEW_SCALE)
 }

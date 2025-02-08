@@ -1,5 +1,8 @@
 import SwiftUI
 
+private let FRAME_WIDTH = 1320
+private let FRAME_HEIGHT = 2868
+
 struct ScreenshotView: View {
     var headerText: String
     var subtitleText: String
@@ -34,9 +37,14 @@ struct ScreenshotView: View {
             }
             .padding()
         }
+        .frame(width: CGFloat(FRAME_WIDTH), height: CGFloat(FRAME_HEIGHT))
     }
 }
 
+private let PREVIEW_SCALE = 0.25
+
 #Preview {
     ScreenshotView(headerText: "Manage your passes", subtitleText: "To edit later", imageName: "Screenshot1")
+        .scaleEffect(PREVIEW_SCALE)
+        .frame(width: Double(FRAME_WIDTH) * PREVIEW_SCALE, height: Double(FRAME_HEIGHT) * PREVIEW_SCALE)
 }
