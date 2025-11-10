@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Button("Save screenshot 1") {
-            saveViewAsPNG(view: ScreenshotView(headerText: "Manage your passes", subtitleText: "To edit later", imageName: "Screenshot1"), filename: "Screenshot1")
+            saveViewAsPNG(view: ScreenshotView(headerText: "Manage your Wallet", subtitleText: "With digital Passes", imageName: "Screenshot1"), filename: "Screenshot1")
         }
         .padding()
 
