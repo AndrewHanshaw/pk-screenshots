@@ -2,12 +2,12 @@ import SwiftUI
 
 private let FRAME_WIDTH = 1280
 private let FRAME_HEIGHT = 640
-private let PREVIEW_SCALE = 0.25
+private let PREVIEW_SCALE = 0.5
 
 struct GithubSocialPreview: View {
-    let backgroundcolor1: Color = .init(hex: 0x173C1C)
-    let backgroundcolor2: Color = .init(hex: 0x102A13)
-    let textColor: Color = .init(hex: 0x88BD8F)
+    let backgroundcolor1: Color = .init(hex: 0x146C20)
+    let backgroundcolor2: Color = .init(hex: 0x105619)
+    let textColor: Color = .init(hex: 0x5CCE6F)
 
     var body: some View {
         ZStack {
