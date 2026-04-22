@@ -16,7 +16,7 @@ struct ScreenshotView: View {
             LinearGradient(colors: [maincolortint2, maincolor], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             VStack {
-                Spacer()
+                // Spacer()
                 VStack {
                     Text(headerText)
                         .font(Font.system(size: 100))
@@ -29,11 +29,13 @@ struct ScreenshotView: View {
                         .fontDesign(.rounded)
                         .foregroundStyle(Color.white)
                 }
+                .padding(.top, 50)
                 Spacer()
                 Image(imageName)
                     .resizable()
                     .scaledToFit()
                     .padding([.leading, .trailing, .bottom], 50)
+                Spacer()
             }
             .padding()
         }

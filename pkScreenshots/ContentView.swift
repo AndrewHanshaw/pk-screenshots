@@ -13,7 +13,12 @@ struct ContentView: View {
         .padding()
 
         Button("Save screenshot 3") {
-            saveViewAsPNG(view: ScreenshotView(headerText: "Scan existing cards", subtitleText: "And save them digitally", imageName: "Screenshot3"), filename: "Screenshot3")
+            saveViewAsPNG(view: ScreenshotView(headerText: "Scan physical cards", subtitleText: "And save them digitally", imageName: "Screenshot3"), filename: "Screenshot3")
+        }
+        .padding()
+
+        Button("Save screenshot 4") {
+            saveViewAsPNG(view: ScreenshotView(headerText: "Import existing Passes", subtitleText: " directly from Wallet", imageName: "Screenshot4"), filename: "Screenshot4")
         }
         .padding()
 
