@@ -16,7 +16,6 @@ struct ScreenshotView: View {
             LinearGradient(colors: [maincolortint2, maincolor], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             VStack {
-                // Spacer()
                 VStack {
                     Text(headerText)
                         .font(Font.system(size: 100))
@@ -24,7 +23,7 @@ struct ScreenshotView: View {
                         .fontDesign(.rounded)
                         .foregroundStyle(Color.white)
                     Text(subtitleText)
-                        .font(Font.system(size: 90))
+                        .font(Font.system(size: 100))
                         .fontWeight(.bold)
                         .fontDesign(.rounded)
                         .foregroundStyle(Color.white)
