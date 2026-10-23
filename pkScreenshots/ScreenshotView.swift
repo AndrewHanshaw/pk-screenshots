@@ -1,7 +1,7 @@
 import SwiftUI
 
-private let FRAME_WIDTH = 1320
-private let FRAME_HEIGHT = 2868
+private let FRAME_WIDTH = 1398
+private let FRAME_HEIGHT = 2034
 
 struct ScreenshotView: View {
     var headerText: String
@@ -29,6 +29,7 @@ struct ScreenshotView: View {
                         .foregroundStyle(Color.white)
                 }
                 .padding(.top, 50)
+                .padding(.bottom, 50)
                 Spacer()
                 Image(imageName)
                     .resizable()
